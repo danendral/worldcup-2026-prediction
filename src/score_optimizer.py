@@ -1,21 +1,17 @@
-"""EV-max scoreline picker — the biggest single edge over naive submissions.
+"""EV-max scoreline picker.
 
-Given an 8x8 distribution P[h][a], find (h*, a*) maximizing:
-   EV = 25*P(h=h*, a=a*)
-      + 10*P(h-a == h*-a*) - 10*P(h=h*, a=a*)   # goal diff, minus exact (already counted)
-      + 10*P(h+a == h*+a*) - 10*P(h=h*, a=a*)   # total, minus exact
+The scoring rule has three mutually-exclusive score buckets per match:
+  - exact score: 25 pts
+  - correct goal difference (wrong score): 10 pts
+  - correct total goals (wrong score and wrong diff): 10 pts
 
-Per scoring spec: exact-score bucket grants 25 only; the goal-diff (10) and
-total-goals (10) buckets are awarded only when score is NOT exact. So:
-   EV(h*,a*) = 25*P_exact + 10*(P_same_diff - P_exact) + 10*(P_same_total - P_exact)
-            = (25 - 20)*P_exact + 10*P_same_diff + 10*P_same_total
-            = 5*P_exact + 10*P_same_diff + 10*P_same_total
+So for a candidate prediction (h*, a*) with goal distribution P(h, a):
+   EV(h*, a*) = 25 * P_exact
+              + 10 * (P_same_diff  - P_exact)
+              + 10 * (P_same_total - P_exact)
 
-Wait — re-reading the spec: "Correct goal difference, wrong score" — those
-ARE different buckets. You get goal-diff points OR exact points (not both),
-likewise for total. So the rule above (subtract exact) is correct.
-
-This function returns the (h*, a*) maximizing expected points.
+`pick_score` returns argmax (h*, a*). This routinely beats picking the
+modal scoreline, since EV rewards neighborhoods rather than peaks.
 """
 from __future__ import annotations
 import numpy as np

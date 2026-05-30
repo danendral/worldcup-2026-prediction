@@ -15,7 +15,7 @@ import pandas as pd
 
 from .goals_model import score_distribution
 from .odds_blend import consensus_h2h_probs, blend_outcome, ipf_score_grid
-from .score_optimizer import pick_score, outcome_probs, winning_team, expected_points
+from .score_optimizer import pick_score, outcome_probs, winning_team
 from .ancillary import predict_corners, predict_yellow_cards, predict_red_cards
 from .bracket_sim import aggregate_simulations
 from .team_map import resolve_playoff
