@@ -1,5 +1,7 @@
 # FIFA World Cup 2026 — Prediction Pipeline
 
+**→ [View the interactive predictions dashboard](https://danendral.github.io/worldcup-2026-prediction/predictions.html)**
+
 An end-to-end statistical pipeline for the [DataCamp World Cup 2026 Prediction Competition](https://www.datacamp.com/) — a single-notebook submission that forecasts every one of the 104 tournament matches (72 group + 32 knockout) before kickoff.
 
 The pipeline is small (~1.3k LOC of Python) and deliberately classical: Elo + Dixon-Coles bivariate Poisson + bookmaker blend + Monte-Carlo bracket simulation + an **EV-optimal scoreline picker** tuned to the competition's scoring rule.
