@@ -1,0 +1,3989 @@
+{
+  "meta": {
+    "title": "FIFA World Cup 2026",
+    "model": "Time-decayed Elo · Dixon-Coles bivariate Poisson · 65/35 bookmaker blend",
+    "nSims": 3000,
+    "asOf": "2026-05-30",
+    "kickoff": "2026-06-11T16:00:00Z",
+    "window": "Jun 11 – Jul 19, 2026",
+    "host": "USA · Canada · Mexico",
+    "matchesPredicted": 104
+  },
+  "summary": {
+    "champion": "Spain",
+    "championProb": 0.1397,
+    "bracketChampion": "Spain",
+    "bracketRunnerUp": "Argentina",
+    "runnerUp": "Argentina",
+    "finalScore": "1–1",
+    "finalPenalties": true,
+    "topContenders": [
+      {
+        "name": "Spain",
+        "group": "H",
+        "confederation": "UEFA",
+        "champion": 0.1397,
+        "final": 0.2153,
+        "sf": 0.3303
+      },
+      {
+        "name": "Argentina",
+        "group": "J",
+        "confederation": "CONMEBOL",
+        "champion": 0.1027,
+        "final": 0.1793,
+        "sf": 0.2983
+      },
+      {
+        "name": "England",
+        "group": "L",
+        "confederation": "UEFA",
+        "champion": 0.0897,
+        "final": 0.1617,
+        "sf": 0.2737
+      },
+      {
+        "name": "Brazil",
+        "group": "C",
+        "confederation": "CONMEBOL",
+        "champion": 0.0887,
+        "final": 0.1673,
+        "sf": 0.288
+      },
+      {
+        "name": "Portugal",
+        "group": "K",
+        "confederation": "UEFA",
+        "champion": 0.0813,
+        "final": 0.1397,
+        "sf": 0.251
+      }
+    ],
+    "knockoutsToPens": 20,
+    "stageOrder": [
+      "r32",
+      "r16",
+      "qf",
+      "sf",
+      "final",
+      "champion"
+    ],
+    "stageLabels": {
+      "qualify": "Group Qualify",
+      "r32": "Round of 32",
+      "r16": "Round of 16",
+      "qf": "Quarter-finals",
+      "sf": "Semi-finals",
+      "final": "Final",
+      "champion": "Champion"
+    }
+  },
+  "teams": [
+    {
+      "name": "Spain",
+      "group": "H",
+      "confederation": "UEFA",
+      "elo": 2214.4,
+      "stages": {
+        "qualify": 0.9563,
+        "r32": 0.9877,
+        "r16": 0.6807,
+        "qf": 0.4527,
+        "sf": 0.3303,
+        "final": 0.2153,
+        "champion": 0.1397
+      },
+      "groupFinish": {
+        "1": 0.7393,
+        "2": 0.217,
+        "3": 0.0363,
+        "4": 0.0073
+      }
+    },
+    {
+      "name": "Argentina",
+      "group": "J",
+      "confederation": "CONMEBOL",
+      "elo": 2171.3,
+      "stages": {
+        "qualify": 0.9127,
+        "r32": 0.9723,
+        "r16": 0.6077,
+        "qf": 0.4287,
+        "sf": 0.2983,
+        "final": 0.1793,
+        "champion": 0.1027
+      },
+      "groupFinish": {
+        "1": 0.6913,
+        "2": 0.2213,
+        "3": 0.0713,
+        "4": 0.016
+      }
+    },
+    {
+      "name": "England",
+      "group": "L",
+      "confederation": "UEFA",
+      "elo": 2077.7,
+      "stages": {
+        "qualify": 0.9103,
+        "r32": 0.9757,
+        "r16": 0.6527,
+        "qf": 0.428,
+        "sf": 0.2737,
+        "final": 0.1617,
+        "champion": 0.0897
+      },
+      "groupFinish": {
+        "1": 0.6437,
+        "2": 0.2667,
+        "3": 0.0763,
+        "4": 0.0133
+      }
+    },
+    {
+      "name": "Brazil",
+      "group": "C",
+      "confederation": "CONMEBOL",
+      "elo": 2042.2,
+      "stages": {
+        "qualify": 0.912,
+        "r32": 0.9873,
+        "r16": 0.6683,
+        "qf": 0.423,
+        "sf": 0.288,
+        "final": 0.1673,
+        "champion": 0.0887
+      },
+      "groupFinish": {
+        "1": 0.6727,
+        "2": 0.2393,
+        "3": 0.0817,
+        "4": 0.0063
+      }
+    },
+    {
+      "name": "Portugal",
+      "group": "K",
+      "confederation": "UEFA",
+      "elo": 2028.8,
+      "stages": {
+        "qualify": 0.8547,
+        "r32": 0.942,
+        "r16": 0.6643,
+        "qf": 0.4257,
+        "sf": 0.251,
+        "final": 0.1397,
+        "champion": 0.0813
+      },
+      "groupFinish": {
+        "1": 0.5327,
+        "2": 0.322,
+        "3": 0.1123,
+        "4": 0.033
+      }
+    },
+    {
+      "name": "France",
+      "group": "I",
+      "confederation": "UEFA",
+      "elo": 2131.9,
+      "stages": {
+        "qualify": 0.877,
+        "r32": 0.9717,
+        "r16": 0.6747,
+        "qf": 0.3987,
+        "sf": 0.241,
+        "final": 0.1367,
+        "champion": 0.076
+      },
+      "groupFinish": {
+        "1": 0.599,
+        "2": 0.278,
+        "3": 0.107,
+        "4": 0.016
+      }
+    },
+    {
+      "name": "Germany",
+      "group": "E",
+      "confederation": "UEFA",
+      "elo": 1998.5,
+      "stages": {
+        "qualify": 0.87,
+        "r32": 0.978,
+        "r16": 0.6293,
+        "qf": 0.4127,
+        "sf": 0.216,
+        "final": 0.1057,
+        "champion": 0.051
+      },
+      "groupFinish": {
+        "1": 0.5733,
+        "2": 0.2967,
+        "3": 0.1197,
+        "4": 0.0103
+      }
+    },
+    {
+      "name": "Colombia",
+      "group": "K",
+      "confederation": "CONMEBOL",
+      "elo": 2039.4,
+      "stages": {
+        "qualify": 0.784,
+        "r32": 0.9053,
+        "r16": 0.5737,
+        "qf": 0.3387,
+        "sf": 0.1917,
+        "final": 0.105,
+        "champion": 0.0477
+      },
+      "groupFinish": {
+        "1": 0.3827,
+        "2": 0.4013,
+        "3": 0.1583,
+        "4": 0.0577
+      }
+    },
+    {
+      "name": "Netherlands",
+      "group": "F",
+      "confederation": "UEFA",
+      "elo": 2019.6,
+      "stages": {
+        "qualify": 0.772,
+        "r32": 0.8907,
+        "r16": 0.467,
+        "qf": 0.263,
+        "sf": 0.1473,
+        "final": 0.0777,
+        "champion": 0.039
+      },
+      "groupFinish": {
+        "1": 0.5127,
+        "2": 0.2593,
+        "3": 0.147,
+        "4": 0.081
+      }
+    },
+    {
+      "name": "Belgium",
+      "group": "G",
+      "confederation": "UEFA",
+      "elo": 1919.9,
+      "stages": {
+        "qualify": 0.8667,
+        "r32": 0.9467,
+        "r16": 0.6253,
+        "qf": 0.404,
+        "sf": 0.1717,
+        "final": 0.0833,
+        "champion": 0.0373
+      },
+      "groupFinish": {
+        "1": 0.6407,
+        "2": 0.226,
+        "3": 0.0977,
+        "4": 0.0357
+      }
+    },
+    {
+      "name": "Switzerland",
+      "group": "B",
+      "confederation": "UEFA",
+      "elo": 1944.4,
+      "stages": {
+        "qualify": 0.885,
+        "r32": 0.9583,
+        "r16": 0.6387,
+        "qf": 0.29,
+        "sf": 0.1383,
+        "final": 0.0617,
+        "champion": 0.03
+      },
+      "groupFinish": {
+        "1": 0.6283,
+        "2": 0.2567,
+        "3": 0.0853,
+        "4": 0.0297
+      }
+    },
+    {
+      "name": "Morocco",
+      "group": "C",
+      "confederation": "CAF",
+      "elo": 1987.2,
+      "stages": {
+        "qualify": 0.6983,
+        "r32": 0.8957,
+        "r16": 0.4827,
+        "qf": 0.256,
+        "sf": 0.127,
+        "final": 0.0607,
+        "champion": 0.0297
+      },
+      "groupFinish": {
+        "1": 0.2307,
+        "2": 0.4677,
+        "3": 0.254,
+        "4": 0.0477
+      }
+    },
+    {
+      "name": "Ecuador",
+      "group": "E",
+      "confederation": "CONMEBOL",
+      "elo": 2003.6,
+      "stages": {
+        "qualify": 0.695,
+        "r32": 0.9133,
+        "r16": 0.4933,
+        "qf": 0.2583,
+        "sf": 0.1283,
+        "final": 0.0633,
+        "champion": 0.0293
+      },
+      "groupFinish": {
+        "1": 0.2987,
+        "2": 0.3963,
+        "3": 0.2687,
+        "4": 0.0363
+      }
+    },
+    {
+      "name": "Uruguay",
+      "group": "H",
+      "confederation": "CONMEBOL",
+      "elo": 1958.3,
+      "stages": {
+        "qualify": 0.7957,
+        "r32": 0.906,
+        "r16": 0.4217,
+        "qf": 0.2303,
+        "sf": 0.1257,
+        "final": 0.0597,
+        "champion": 0.0287
+      },
+      "groupFinish": {
+        "1": 0.2277,
+        "2": 0.568,
+        "3": 0.157,
+        "4": 0.0473
+      }
+    },
+    {
+      "name": "Norway",
+      "group": "I",
+      "confederation": "UEFA",
+      "elo": 1964.5,
+      "stages": {
+        "qualify": 0.6083,
+        "r32": 0.8447,
+        "r16": 0.4617,
+        "qf": 0.2187,
+        "sf": 0.1083,
+        "final": 0.0457,
+        "champion": 0.0167
+      },
+      "groupFinish": {
+        "1": 0.2477,
+        "2": 0.3607,
+        "3": 0.3103,
+        "4": 0.0813
+      }
+    },
+    {
+      "name": "Croatia",
+      "group": "L",
+      "confederation": "UEFA",
+      "elo": 1979.0,
+      "stages": {
+        "qualify": 0.752,
+        "r32": 0.8933,
+        "r16": 0.4473,
+        "qf": 0.2157,
+        "sf": 0.101,
+        "final": 0.0473,
+        "champion": 0.0163
+      },
+      "groupFinish": {
+        "1": 0.2873,
+        "2": 0.4647,
+        "3": 0.1837,
+        "4": 0.0643
+      }
+    },
+    {
+      "name": "Japan",
+      "group": "F",
+      "confederation": "AFC",
+      "elo": 1989.8,
+      "stages": {
+        "qualify": 0.5723,
+        "r32": 0.7547,
+        "r16": 0.346,
+        "qf": 0.1667,
+        "sf": 0.0777,
+        "final": 0.03,
+        "champion": 0.0143
+      },
+      "groupFinish": {
+        "1": 0.2557,
+        "2": 0.3167,
+        "3": 0.2507,
+        "4": 0.177
+      }
+    },
+    {
+      "name": "Senegal",
+      "group": "I",
+      "confederation": "CAF",
+      "elo": 1917.3,
+      "stages": {
+        "qualify": 0.4507,
+        "r32": 0.727,
+        "r16": 0.3827,
+        "qf": 0.171,
+        "sf": 0.0713,
+        "final": 0.0317,
+        "champion": 0.0113
+      },
+      "groupFinish": {
+        "1": 0.141,
+        "2": 0.3097,
+        "3": 0.4013,
+        "4": 0.148
+      }
+    },
+    {
+      "name": "Canada",
+      "group": "B",
+      "confederation": "CONCACAF",
+      "elo": 1886.5,
+      "stages": {
+        "qualify": 0.678,
+        "r32": 0.846,
+        "r16": 0.4163,
+        "qf": 0.1527,
+        "sf": 0.0467,
+        "final": 0.0187,
+        "champion": 0.008
+      },
+      "groupFinish": {
+        "1": 0.2517,
+        "2": 0.4263,
+        "3": 0.229,
+        "4": 0.093
+      }
+    },
+    {
+      "name": "Mexico",
+      "group": "A",
+      "confederation": "CONCACAF",
+      "elo": 1926.3,
+      "stages": {
+        "qualify": 0.6827,
+        "r32": 0.8403,
+        "r16": 0.4123,
+        "qf": 0.1633,
+        "sf": 0.0567,
+        "final": 0.016,
+        "champion": 0.0067
+      },
+      "groupFinish": {
+        "1": 0.4057,
+        "2": 0.277,
+        "3": 0.1973,
+        "4": 0.12
+      }
+    },
+    {
+      "name": "Austria",
+      "group": "J",
+      "confederation": "UEFA",
+      "elo": 1883.2,
+      "stages": {
+        "qualify": 0.569,
+        "r32": 0.7937,
+        "r16": 0.307,
+        "qf": 0.145,
+        "sf": 0.0663,
+        "final": 0.0257,
+        "champion": 0.006
+      },
+      "groupFinish": {
+        "1": 0.1803,
+        "2": 0.3887,
+        "3": 0.314,
+        "4": 0.117
+      }
+    },
+    {
+      "name": "Iran",
+      "group": "G",
+      "confederation": "AFC",
+      "elo": 1880.4,
+      "stages": {
+        "qualify": 0.452,
+        "r32": 0.6773,
+        "r16": 0.325,
+        "qf": 0.135,
+        "sf": 0.046,
+        "final": 0.0157,
+        "champion": 0.0053
+      },
+      "groupFinish": {
+        "1": 0.1547,
+        "2": 0.2973,
+        "3": 0.3277,
+        "4": 0.2203
+      }
+    },
+    {
+      "name": "Algeria",
+      "group": "J",
+      "confederation": "CAF",
+      "elo": 1847.4,
+      "stages": {
+        "qualify": 0.419,
+        "r32": 0.666,
+        "r16": 0.2193,
+        "qf": 0.0897,
+        "sf": 0.035,
+        "final": 0.013,
+        "champion": 0.0047
+      },
+      "groupFinish": {
+        "1": 0.1093,
+        "2": 0.3097,
+        "3": 0.3857,
+        "4": 0.1953
+      }
+    },
+    {
+      "name": "Australia",
+      "group": "D",
+      "confederation": "AFC",
+      "elo": 1903.1,
+      "stages": {
+        "qualify": 0.3663,
+        "r32": 0.562,
+        "r16": 0.2563,
+        "qf": 0.1063,
+        "sf": 0.037,
+        "final": 0.0143,
+        "champion": 0.0047
+      },
+      "groupFinish": {
+        "1": 0.157,
+        "2": 0.2093,
+        "3": 0.268,
+        "4": 0.3657
+      }
+    },
+    {
+      "name": "Turkey",
+      "group": "D",
+      "confederation": "UEFA",
+      "elo": 1953.8,
+      "stages": {
+        "qualify": 0.6073,
+        "r32": 0.7687,
+        "r16": 0.3817,
+        "qf": 0.158,
+        "sf": 0.0443,
+        "final": 0.0117,
+        "champion": 0.0047
+      },
+      "groupFinish": {
+        "1": 0.3427,
+        "2": 0.2647,
+        "3": 0.2203,
+        "4": 0.1723
+      }
+    },
+    {
+      "name": "Côte d'Ivoire",
+      "group": "E",
+      "confederation": "CAF",
+      "elo": 1797.0,
+      "stages": {
+        "qualify": 0.4097,
+        "r32": 0.767,
+        "r16": 0.3183,
+        "qf": 0.121,
+        "sf": 0.0417,
+        "final": 0.013,
+        "champion": 0.004
+      },
+      "groupFinish": {
+        "1": 0.123,
+        "2": 0.2867,
+        "3": 0.4893,
+        "4": 0.101
+      }
+    },
+    {
+      "name": "Egypt",
+      "group": "G",
+      "confederation": "CAF",
+      "elo": 1798.8,
+      "stages": {
+        "qualify": 0.521,
+        "r32": 0.726,
+        "r16": 0.32,
+        "qf": 0.1157,
+        "sf": 0.0413,
+        "final": 0.0117,
+        "champion": 0.004
+      },
+      "groupFinish": {
+        "1": 0.1667,
+        "2": 0.3543,
+        "3": 0.3153,
+        "4": 0.1637
+      }
+    },
+    {
+      "name": "Paraguay",
+      "group": "D",
+      "confederation": "CONMEBOL",
+      "elo": 1900.8,
+      "stages": {
+        "qualify": 0.486,
+        "r32": 0.68,
+        "r16": 0.328,
+        "qf": 0.1183,
+        "sf": 0.0353,
+        "final": 0.013,
+        "champion": 0.004
+      },
+      "groupFinish": {
+        "1": 0.2203,
+        "2": 0.2657,
+        "3": 0.254,
+        "4": 0.26
+      }
+    },
+    {
+      "name": "Sweden",
+      "group": "F",
+      "confederation": "UEFA",
+      "elo": 1775.9,
+      "stages": {
+        "qualify": 0.395,
+        "r32": 0.5997,
+        "r16": 0.2237,
+        "qf": 0.0863,
+        "sf": 0.032,
+        "final": 0.0103,
+        "champion": 0.0037
+      },
+      "groupFinish": {
+        "1": 0.1547,
+        "2": 0.2403,
+        "3": 0.3,
+        "4": 0.305
+      }
+    },
+    {
+      "name": "South Korea",
+      "group": "A",
+      "confederation": "AFC",
+      "elo": 1869.8,
+      "stages": {
+        "qualify": 0.5083,
+        "r32": 0.7133,
+        "r16": 0.3283,
+        "qf": 0.114,
+        "sf": 0.0333,
+        "final": 0.011,
+        "champion": 0.0033
+      },
+      "groupFinish": {
+        "1": 0.2327,
+        "2": 0.2757,
+        "3": 0.281,
+        "4": 0.2107
+      }
+    },
+    {
+      "name": "Czech Republic",
+      "group": "A",
+      "confederation": "UEFA",
+      "elo": 1782.1,
+      "stages": {
+        "qualify": 0.5613,
+        "r32": 0.738,
+        "r16": 0.326,
+        "qf": 0.123,
+        "sf": 0.031,
+        "final": 0.01,
+        "champion": 0.0027
+      },
+      "groupFinish": {
+        "1": 0.2743,
+        "2": 0.287,
+        "3": 0.245,
+        "4": 0.1937
+      }
+    },
+    {
+      "name": "Scotland",
+      "group": "C",
+      "confederation": "UEFA",
+      "elo": 1827.4,
+      "stages": {
+        "qualify": 0.3557,
+        "r32": 0.7057,
+        "r16": 0.2633,
+        "qf": 0.1037,
+        "sf": 0.04,
+        "final": 0.011,
+        "champion": 0.0027
+      },
+      "groupFinish": {
+        "1": 0.0947,
+        "2": 0.261,
+        "3": 0.501,
+        "4": 0.1433
+      }
+    },
+    {
+      "name": "Tunisia",
+      "group": "F",
+      "confederation": "CAF",
+      "elo": 1744.5,
+      "stages": {
+        "qualify": 0.2607,
+        "r32": 0.4527,
+        "r16": 0.151,
+        "qf": 0.057,
+        "sf": 0.023,
+        "final": 0.0073,
+        "champion": 0.002
+      },
+      "groupFinish": {
+        "1": 0.077,
+        "2": 0.1837,
+        "3": 0.3023,
+        "4": 0.437
+      }
+    },
+    {
+      "name": "DR Congo",
+      "group": "K",
+      "confederation": "CAF",
+      "elo": 1760.5,
+      "stages": {
+        "qualify": 0.1883,
+        "r32": 0.3967,
+        "r16": 0.1513,
+        "qf": 0.051,
+        "sf": 0.0163,
+        "final": 0.0043,
+        "champion": 0.0017
+      },
+      "groupFinish": {
+        "1": 0.041,
+        "2": 0.1473,
+        "3": 0.374,
+        "4": 0.4377
+      }
+    },
+    {
+      "name": "USA",
+      "group": "D",
+      "confederation": "CONCACAF",
+      "elo": 1837.2,
+      "stages": {
+        "qualify": 0.5403,
+        "r32": 0.731,
+        "r16": 0.3273,
+        "qf": 0.1167,
+        "sf": 0.0303,
+        "final": 0.0103,
+        "champion": 0.0013
+      },
+      "groupFinish": {
+        "1": 0.28,
+        "2": 0.2603,
+        "3": 0.2577,
+        "4": 0.202
+      }
+    },
+    {
+      "name": "Iraq",
+      "group": "I",
+      "confederation": "AFC",
+      "elo": 1737.6,
+      "stages": {
+        "qualify": 0.064,
+        "r32": 0.155,
+        "r16": 0.044,
+        "qf": 0.0113,
+        "sf": 0.003,
+        "final": 0.0007,
+        "champion": 0.0007
+      },
+      "groupFinish": {
+        "1": 0.0123,
+        "2": 0.0517,
+        "3": 0.1813,
+        "4": 0.7547
+      }
+    },
+    {
+      "name": "Saudi Arabia",
+      "group": "H",
+      "confederation": "AFC",
+      "elo": 1691.2,
+      "stages": {
+        "qualify": 0.136,
+        "r32": 0.3483,
+        "r16": 0.0797,
+        "qf": 0.0213,
+        "sf": 0.0063,
+        "final": 0.0013,
+        "champion": 0.0003
+      },
+      "groupFinish": {
+        "1": 0.017,
+        "2": 0.119,
+        "3": 0.4263,
+        "4": 0.4377
+      }
+    },
+    {
+      "name": "Uzbekistan",
+      "group": "K",
+      "confederation": "AFC",
+      "elo": 1836.0,
+      "stages": {
+        "qualify": 0.173,
+        "r32": 0.3663,
+        "r16": 0.1267,
+        "qf": 0.0383,
+        "sf": 0.012,
+        "final": 0.002,
+        "champion": 0.0003
+      },
+      "groupFinish": {
+        "1": 0.0437,
+        "2": 0.1293,
+        "3": 0.3553,
+        "4": 0.4717
+      }
+    },
+    {
+      "name": "Bosnia & Herzegovina",
+      "group": "B",
+      "confederation": "UEFA",
+      "elo": 1649.2,
+      "stages": {
+        "qualify": 0.3113,
+        "r32": 0.593,
+        "r16": 0.202,
+        "qf": 0.0483,
+        "sf": 0.009,
+        "final": 0.002,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.0917,
+        "2": 0.2197,
+        "3": 0.4277,
+        "4": 0.261
+      }
+    },
+    {
+      "name": "Cabo Verde",
+      "group": "H",
+      "confederation": "CAF",
+      "elo": 1656.7,
+      "stages": {
+        "qualify": 0.112,
+        "r32": 0.2843,
+        "r16": 0.06,
+        "qf": 0.011,
+        "sf": 0.0013,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.016,
+        "2": 0.096,
+        "3": 0.3803,
+        "4": 0.5077
+      }
+    },
+    {
+      "name": "Curaçao",
+      "group": "E",
+      "confederation": "CONCACAF",
+      "elo": 1602.3,
+      "stages": {
+        "qualify": 0.0253,
+        "r32": 0.078,
+        "r16": 0.0097,
+        "qf": 0.0007,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.005,
+        "2": 0.0203,
+        "3": 0.1223,
+        "4": 0.8523
+      }
+    },
+    {
+      "name": "Ghana",
+      "group": "L",
+      "confederation": "CAF",
+      "elo": 1623.6,
+      "stages": {
+        "qualify": 0.23,
+        "r32": 0.4717,
+        "r16": 0.1083,
+        "qf": 0.0307,
+        "sf": 0.007,
+        "final": 0.0027,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.0527,
+        "2": 0.1773,
+        "3": 0.4267,
+        "4": 0.3433
+      }
+    },
+    {
+      "name": "Haiti",
+      "group": "C",
+      "confederation": "CONCACAF",
+      "elo": 1675.6,
+      "stages": {
+        "qualify": 0.034,
+        "r32": 0.1083,
+        "r16": 0.014,
+        "qf": 0.002,
+        "sf": 0.0003,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.002,
+        "2": 0.032,
+        "3": 0.1633,
+        "4": 0.8027
+      }
+    },
+    {
+      "name": "Jordan",
+      "group": "J",
+      "confederation": "AFC",
+      "elo": 1781.7,
+      "stages": {
+        "qualify": 0.0993,
+        "r32": 0.2163,
+        "r16": 0.0437,
+        "qf": 0.0097,
+        "sf": 0.0023,
+        "final": 0.0003,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.019,
+        "2": 0.0803,
+        "3": 0.229,
+        "4": 0.6717
+      }
+    },
+    {
+      "name": "New Zealand",
+      "group": "G",
+      "confederation": "OFC",
+      "elo": 1743.5,
+      "stages": {
+        "qualify": 0.1603,
+        "r32": 0.2977,
+        "r16": 0.08,
+        "qf": 0.0223,
+        "sf": 0.0047,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.038,
+        "2": 0.1223,
+        "3": 0.2593,
+        "4": 0.5803
+      }
+    },
+    {
+      "name": "Panama",
+      "group": "L",
+      "confederation": "CONCACAF",
+      "elo": 1828.9,
+      "stages": {
+        "qualify": 0.1077,
+        "r32": 0.2703,
+        "r16": 0.0547,
+        "qf": 0.01,
+        "sf": 0.0013,
+        "final": 0.0007,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.0163,
+        "2": 0.0913,
+        "3": 0.3133,
+        "4": 0.579
+      }
+    },
+    {
+      "name": "Qatar",
+      "group": "B",
+      "confederation": "AFC",
+      "elo": 1585.4,
+      "stages": {
+        "qualify": 0.1257,
+        "r32": 0.2707,
+        "r16": 0.066,
+        "qf": 0.0097,
+        "sf": 0.001,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.0283,
+        "2": 0.0973,
+        "3": 0.258,
+        "4": 0.6163
+      }
+    },
+    {
+      "name": "South Africa",
+      "group": "A",
+      "confederation": "CAF",
+      "elo": 1658.9,
+      "stages": {
+        "qualify": 0.2477,
+        "r32": 0.4257,
+        "r16": 0.1383,
+        "qf": 0.0463,
+        "sf": 0.0087,
+        "final": 0.0017,
+        "champion": 0.0
+      },
+      "groupFinish": {
+        "1": 0.0873,
+        "2": 0.1603,
+        "3": 0.2767,
+        "4": 0.4757
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group": "A",
+      "teams": [
+        {
+          "name": "Mexico",
+          "confederation": "CONCACAF",
+          "qualify": 0.6827,
+          "champion": 0.0067,
+          "winGroup": 0.4057
+        },
+        {
+          "name": "Czech Republic",
+          "confederation": "UEFA",
+          "qualify": 0.5613,
+          "champion": 0.0027,
+          "winGroup": 0.2743
+        },
+        {
+          "name": "South Korea",
+          "confederation": "AFC",
+          "qualify": 0.5083,
+          "champion": 0.0033,
+          "winGroup": 0.2327
+        },
+        {
+          "name": "South Africa",
+          "confederation": "CAF",
+          "qualify": 0.2477,
+          "champion": 0.0,
+          "winGroup": 0.0873
+        }
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        {
+          "name": "Switzerland",
+          "confederation": "UEFA",
+          "qualify": 0.885,
+          "champion": 0.03,
+          "winGroup": 0.6283
+        },
+        {
+          "name": "Canada",
+          "confederation": "CONCACAF",
+          "qualify": 0.678,
+          "champion": 0.008,
+          "winGroup": 0.2517
+        },
+        {
+          "name": "Bosnia & Herzegovina",
+          "confederation": "UEFA",
+          "qualify": 0.3113,
+          "champion": 0.0,
+          "winGroup": 0.0917
+        },
+        {
+          "name": "Qatar",
+          "confederation": "AFC",
+          "qualify": 0.1257,
+          "champion": 0.0,
+          "winGroup": 0.0283
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        {
+          "name": "Brazil",
+          "confederation": "CONMEBOL",
+          "qualify": 0.912,
+          "champion": 0.0887,
+          "winGroup": 0.6727
+        },
+        {
+          "name": "Morocco",
+          "confederation": "CAF",
+          "qualify": 0.6983,
+          "champion": 0.0297,
+          "winGroup": 0.2307
+        },
+        {
+          "name": "Scotland",
+          "confederation": "UEFA",
+          "qualify": 0.3557,
+          "champion": 0.0027,
+          "winGroup": 0.0947
+        },
+        {
+          "name": "Haiti",
+          "confederation": "CONCACAF",
+          "qualify": 0.034,
+          "champion": 0.0,
+          "winGroup": 0.002
+        }
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        {
+          "name": "Turkey",
+          "confederation": "UEFA",
+          "qualify": 0.6073,
+          "champion": 0.0047,
+          "winGroup": 0.3427
+        },
+        {
+          "name": "USA",
+          "confederation": "CONCACAF",
+          "qualify": 0.5403,
+          "champion": 0.0013,
+          "winGroup": 0.28
+        },
+        {
+          "name": "Paraguay",
+          "confederation": "CONMEBOL",
+          "qualify": 0.486,
+          "champion": 0.004,
+          "winGroup": 0.2203
+        },
+        {
+          "name": "Australia",
+          "confederation": "AFC",
+          "qualify": 0.3663,
+          "champion": 0.0047,
+          "winGroup": 0.157
+        }
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        {
+          "name": "Germany",
+          "confederation": "UEFA",
+          "qualify": 0.87,
+          "champion": 0.051,
+          "winGroup": 0.5733
+        },
+        {
+          "name": "Ecuador",
+          "confederation": "CONMEBOL",
+          "qualify": 0.695,
+          "champion": 0.0293,
+          "winGroup": 0.2987
+        },
+        {
+          "name": "Côte d'Ivoire",
+          "confederation": "CAF",
+          "qualify": 0.4097,
+          "champion": 0.004,
+          "winGroup": 0.123
+        },
+        {
+          "name": "Curaçao",
+          "confederation": "CONCACAF",
+          "qualify": 0.0253,
+          "champion": 0.0,
+          "winGroup": 0.005
+        }
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        {
+          "name": "Netherlands",
+          "confederation": "UEFA",
+          "qualify": 0.772,
+          "champion": 0.039,
+          "winGroup": 0.5127
+        },
+        {
+          "name": "Japan",
+          "confederation": "AFC",
+          "qualify": 0.5723,
+          "champion": 0.0143,
+          "winGroup": 0.2557
+        },
+        {
+          "name": "Sweden",
+          "confederation": "UEFA",
+          "qualify": 0.395,
+          "champion": 0.0037,
+          "winGroup": 0.1547
+        },
+        {
+          "name": "Tunisia",
+          "confederation": "CAF",
+          "qualify": 0.2607,
+          "champion": 0.002,
+          "winGroup": 0.077
+        }
+      ]
+    },
+    {
+      "group": "G",
+      "teams": [
+        {
+          "name": "Belgium",
+          "confederation": "UEFA",
+          "qualify": 0.8667,
+          "champion": 0.0373,
+          "winGroup": 0.6407
+        },
+        {
+          "name": "Egypt",
+          "confederation": "CAF",
+          "qualify": 0.521,
+          "champion": 0.004,
+          "winGroup": 0.1667
+        },
+        {
+          "name": "Iran",
+          "confederation": "AFC",
+          "qualify": 0.452,
+          "champion": 0.0053,
+          "winGroup": 0.1547
+        },
+        {
+          "name": "New Zealand",
+          "confederation": "OFC",
+          "qualify": 0.1603,
+          "champion": 0.0,
+          "winGroup": 0.038
+        }
+      ]
+    },
+    {
+      "group": "H",
+      "teams": [
+        {
+          "name": "Spain",
+          "confederation": "UEFA",
+          "qualify": 0.9563,
+          "champion": 0.1397,
+          "winGroup": 0.7393
+        },
+        {
+          "name": "Uruguay",
+          "confederation": "CONMEBOL",
+          "qualify": 0.7957,
+          "champion": 0.0287,
+          "winGroup": 0.2277
+        },
+        {
+          "name": "Saudi Arabia",
+          "confederation": "AFC",
+          "qualify": 0.136,
+          "champion": 0.0003,
+          "winGroup": 0.017
+        },
+        {
+          "name": "Cabo Verde",
+          "confederation": "CAF",
+          "qualify": 0.112,
+          "champion": 0.0,
+          "winGroup": 0.016
+        }
+      ]
+    },
+    {
+      "group": "I",
+      "teams": [
+        {
+          "name": "France",
+          "confederation": "UEFA",
+          "qualify": 0.877,
+          "champion": 0.076,
+          "winGroup": 0.599
+        },
+        {
+          "name": "Norway",
+          "confederation": "UEFA",
+          "qualify": 0.6083,
+          "champion": 0.0167,
+          "winGroup": 0.2477
+        },
+        {
+          "name": "Senegal",
+          "confederation": "CAF",
+          "qualify": 0.4507,
+          "champion": 0.0113,
+          "winGroup": 0.141
+        },
+        {
+          "name": "Iraq",
+          "confederation": "AFC",
+          "qualify": 0.064,
+          "champion": 0.0007,
+          "winGroup": 0.0123
+        }
+      ]
+    },
+    {
+      "group": "J",
+      "teams": [
+        {
+          "name": "Argentina",
+          "confederation": "CONMEBOL",
+          "qualify": 0.9127,
+          "champion": 0.1027,
+          "winGroup": 0.6913
+        },
+        {
+          "name": "Austria",
+          "confederation": "UEFA",
+          "qualify": 0.569,
+          "champion": 0.006,
+          "winGroup": 0.1803
+        },
+        {
+          "name": "Algeria",
+          "confederation": "CAF",
+          "qualify": 0.419,
+          "champion": 0.0047,
+          "winGroup": 0.1093
+        },
+        {
+          "name": "Jordan",
+          "confederation": "AFC",
+          "qualify": 0.0993,
+          "champion": 0.0,
+          "winGroup": 0.019
+        }
+      ]
+    },
+    {
+      "group": "K",
+      "teams": [
+        {
+          "name": "Portugal",
+          "confederation": "UEFA",
+          "qualify": 0.8547,
+          "champion": 0.0813,
+          "winGroup": 0.5327
+        },
+        {
+          "name": "Colombia",
+          "confederation": "CONMEBOL",
+          "qualify": 0.784,
+          "champion": 0.0477,
+          "winGroup": 0.3827
+        },
+        {
+          "name": "DR Congo",
+          "confederation": "CAF",
+          "qualify": 0.1883,
+          "champion": 0.0017,
+          "winGroup": 0.041
+        },
+        {
+          "name": "Uzbekistan",
+          "confederation": "AFC",
+          "qualify": 0.173,
+          "champion": 0.0003,
+          "winGroup": 0.0437
+        }
+      ]
+    },
+    {
+      "group": "L",
+      "teams": [
+        {
+          "name": "England",
+          "confederation": "UEFA",
+          "qualify": 0.9103,
+          "champion": 0.0897,
+          "winGroup": 0.6437
+        },
+        {
+          "name": "Croatia",
+          "confederation": "UEFA",
+          "qualify": 0.752,
+          "champion": 0.0163,
+          "winGroup": 0.2873
+        },
+        {
+          "name": "Ghana",
+          "confederation": "CAF",
+          "qualify": 0.23,
+          "champion": 0.0,
+          "winGroup": 0.0527
+        },
+        {
+          "name": "Panama",
+          "confederation": "CONCACAF",
+          "qualify": 0.1077,
+          "champion": 0.0,
+          "winGroup": 0.0163
+        }
+      ]
+    }
+  ],
+  "groupMatches": [
+    {
+      "id": 1,
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Africa",
+      "homeSlot": "Mexico",
+      "awaySlot": "South Africa",
+      "date": "2026-06-11T19:00:00Z",
+      "venue": "Estadio Azteca, Mexico City",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 2,
+      "group": "A",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "homeSlot": "South Korea",
+      "awaySlot": "UEFA Playoff D",
+      "date": "2026-06-12T02:00:00Z",
+      "venue": "Estadio Akron, Guadalajara",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 3,
+      "group": "B",
+      "home": "Canada",
+      "away": "Bosnia & Herzegovina",
+      "homeSlot": "Canada",
+      "awaySlot": "UEFA Playoff A",
+      "date": "2026-06-12T19:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 4,
+      "group": "D",
+      "home": "USA",
+      "away": "Paraguay",
+      "homeSlot": "USA",
+      "awaySlot": "Paraguay",
+      "date": "2026-06-13T01:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 5,
+      "group": "D",
+      "home": "Australia",
+      "away": "Turkey",
+      "homeSlot": "Australia",
+      "awaySlot": "UEFA Playoff C",
+      "date": "2026-06-13T04:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 6,
+      "group": "B",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "homeSlot": "Qatar",
+      "awaySlot": "Switzerland",
+      "date": "2026-06-13T19:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "hg": 0,
+      "ag": 2,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 7,
+      "group": "C",
+      "home": "Brazil",
+      "away": "Morocco",
+      "homeSlot": "Brazil",
+      "awaySlot": "Morocco",
+      "date": "2026-06-13T22:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 8,
+      "group": "C",
+      "home": "Haiti",
+      "away": "Scotland",
+      "homeSlot": "Haiti",
+      "awaySlot": "Scotland",
+      "date": "2026-06-14T01:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "hg": 0,
+      "ag": 2,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 9,
+      "group": "E",
+      "home": "Germany",
+      "away": "Curaçao",
+      "homeSlot": "Germany",
+      "awaySlot": "Curaçao",
+      "date": "2026-06-14T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "hg": 3,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 10,
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Japan",
+      "homeSlot": "Netherlands",
+      "awaySlot": "Japan",
+      "date": "2026-06-14T20:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 11,
+      "group": "E",
+      "home": "Côte d'Ivoire",
+      "away": "Ecuador",
+      "homeSlot": "Côte d'Ivoire",
+      "awaySlot": "Ecuador",
+      "date": "2026-06-14T23:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 12,
+      "group": "F",
+      "home": "Sweden",
+      "away": "Tunisia",
+      "homeSlot": "UEFA Playoff B",
+      "awaySlot": "Tunisia",
+      "date": "2026-06-15T02:00:00Z",
+      "venue": "Estadio BBVA, Monterrey",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 13,
+      "group": "H",
+      "home": "Spain",
+      "away": "Cabo Verde",
+      "homeSlot": "Spain",
+      "awaySlot": "Cabo Verde",
+      "date": "2026-06-15T16:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 14,
+      "group": "G",
+      "home": "Belgium",
+      "away": "Egypt",
+      "homeSlot": "Belgium",
+      "awaySlot": "Egypt",
+      "date": "2026-06-15T19:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 15,
+      "group": "H",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "homeSlot": "Saudi Arabia",
+      "awaySlot": "Uruguay",
+      "date": "2026-06-15T22:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 16,
+      "group": "G",
+      "home": "Iran",
+      "away": "New Zealand",
+      "homeSlot": "Iran",
+      "awaySlot": "New Zealand",
+      "date": "2026-06-16T01:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 17,
+      "group": "J",
+      "home": "Austria",
+      "away": "Jordan",
+      "homeSlot": "Austria",
+      "awaySlot": "Jordan",
+      "date": "2026-06-16T04:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 18,
+      "group": "I",
+      "home": "France",
+      "away": "Senegal",
+      "homeSlot": "France",
+      "awaySlot": "Senegal",
+      "date": "2026-06-16T19:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 19,
+      "group": "I",
+      "home": "Iraq",
+      "away": "Norway",
+      "homeSlot": "FIFA Playoff 2",
+      "awaySlot": "Norway",
+      "date": "2026-06-16T22:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 20,
+      "group": "J",
+      "home": "Argentina",
+      "away": "Algeria",
+      "homeSlot": "Argentina",
+      "awaySlot": "Algeria",
+      "date": "2026-06-17T01:00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 21,
+      "group": "K",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "homeSlot": "Portugal",
+      "awaySlot": "FIFA Playoff 1",
+      "date": "2026-06-17T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 22,
+      "group": "L",
+      "home": "England",
+      "away": "Croatia",
+      "homeSlot": "England",
+      "awaySlot": "Croatia",
+      "date": "2026-06-17T20:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 23,
+      "group": "L",
+      "home": "Ghana",
+      "away": "Panama",
+      "homeSlot": "Ghana",
+      "awaySlot": "Panama",
+      "date": "2026-06-17T23:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 24,
+      "group": "K",
+      "home": "Uzbekistan",
+      "away": "Colombia",
+      "homeSlot": "Uzbekistan",
+      "awaySlot": "Colombia",
+      "date": "2026-06-18T02:00:00Z",
+      "venue": "Estadio Azteca, Mexico City",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 25,
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "homeSlot": "UEFA Playoff D",
+      "awaySlot": "South Africa",
+      "date": "2026-06-18T16:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 26,
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Bosnia & Herzegovina",
+      "homeSlot": "Switzerland",
+      "awaySlot": "UEFA Playoff A",
+      "date": "2026-06-18T19:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 27,
+      "group": "B",
+      "home": "Canada",
+      "away": "Qatar",
+      "homeSlot": "Canada",
+      "awaySlot": "Qatar",
+      "date": "2026-06-18T22:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 28,
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Korea",
+      "homeSlot": "Mexico",
+      "awaySlot": "South Korea",
+      "date": "2026-06-19T01:00:00Z",
+      "venue": "Estadio Akron, Guadalajara",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 29,
+      "group": "D",
+      "home": "Turkey",
+      "away": "Paraguay",
+      "homeSlot": "UEFA Playoff C",
+      "awaySlot": "Paraguay",
+      "date": "2026-06-19T04:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 30,
+      "group": "D",
+      "home": "USA",
+      "away": "Australia",
+      "homeSlot": "USA",
+      "awaySlot": "Australia",
+      "date": "2026-06-19T19:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 31,
+      "group": "C",
+      "home": "Scotland",
+      "away": "Morocco",
+      "homeSlot": "Scotland",
+      "awaySlot": "Morocco",
+      "date": "2026-06-19T22:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 32,
+      "group": "C",
+      "home": "Brazil",
+      "away": "Haiti",
+      "homeSlot": "Brazil",
+      "awaySlot": "Haiti",
+      "date": "2026-06-20T01:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "hg": 3,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 33,
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Japan",
+      "homeSlot": "Tunisia",
+      "awaySlot": "Japan",
+      "date": "2026-06-20T04:00:00Z",
+      "venue": "Estadio BBVA, Monterrey",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 34,
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "homeSlot": "Netherlands",
+      "awaySlot": "UEFA Playoff B",
+      "date": "2026-06-20T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 35,
+      "group": "E",
+      "home": "Germany",
+      "away": "Côte d'Ivoire",
+      "homeSlot": "Germany",
+      "awaySlot": "Côte d'Ivoire",
+      "date": "2026-06-20T20:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 36,
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "homeSlot": "Ecuador",
+      "awaySlot": "Curaçao",
+      "date": "2026-06-21T00:00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 37,
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "homeSlot": "Spain",
+      "awaySlot": "Saudi Arabia",
+      "date": "2026-06-21T16:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 38,
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "homeSlot": "Belgium",
+      "awaySlot": "Iran",
+      "date": "2026-06-21T19:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 39,
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
+      "homeSlot": "Uruguay",
+      "awaySlot": "Cabo Verde",
+      "date": "2026-06-21T22:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 40,
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "homeSlot": "New Zealand",
+      "awaySlot": "Egypt",
+      "date": "2026-06-22T01:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 41,
+      "group": "J",
+      "home": "Argentina",
+      "away": "Austria",
+      "homeSlot": "Argentina",
+      "awaySlot": "Austria",
+      "date": "2026-06-22T17:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 42,
+      "group": "I",
+      "home": "France",
+      "away": "Iraq",
+      "homeSlot": "France",
+      "awaySlot": "FIFA Playoff 2",
+      "date": "2026-06-22T21:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 43,
+      "group": "I",
+      "home": "Norway",
+      "away": "Senegal",
+      "homeSlot": "Norway",
+      "awaySlot": "Senegal",
+      "date": "2026-06-23T00:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 44,
+      "group": "J",
+      "home": "Jordan",
+      "away": "Algeria",
+      "homeSlot": "Jordan",
+      "awaySlot": "Algeria",
+      "date": "2026-06-23T03:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 45,
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "homeSlot": "Portugal",
+      "awaySlot": "Uzbekistan",
+      "date": "2026-06-23T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 46,
+      "group": "L",
+      "home": "England",
+      "away": "Ghana",
+      "homeSlot": "England",
+      "awaySlot": "Ghana",
+      "date": "2026-06-23T20:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 47,
+      "group": "L",
+      "home": "Panama",
+      "away": "Croatia",
+      "homeSlot": "Panama",
+      "awaySlot": "Croatia",
+      "date": "2026-06-23T23:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "hg": 0,
+      "ag": 2,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 48,
+      "group": "K",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "homeSlot": "Colombia",
+      "awaySlot": "FIFA Playoff 1",
+      "date": "2026-06-24T02:00:00Z",
+      "venue": "Estadio Akron, Guadalajara",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 49,
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Canada",
+      "homeSlot": "Switzerland",
+      "awaySlot": "Canada",
+      "date": "2026-06-24T19:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 50,
+      "group": "B",
+      "home": "Bosnia & Herzegovina",
+      "away": "Qatar",
+      "homeSlot": "UEFA Playoff A",
+      "awaySlot": "Qatar",
+      "date": "2026-06-24T19:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 51,
+      "group": "C",
+      "home": "Scotland",
+      "away": "Brazil",
+      "homeSlot": "Scotland",
+      "awaySlot": "Brazil",
+      "date": "2026-06-24T22:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 52,
+      "group": "C",
+      "home": "Morocco",
+      "away": "Haiti",
+      "homeSlot": "Morocco",
+      "awaySlot": "Haiti",
+      "date": "2026-06-24T22:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 53,
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "Mexico",
+      "homeSlot": "UEFA Playoff D",
+      "awaySlot": "Mexico",
+      "date": "2026-06-25T01:00:00Z",
+      "venue": "Estadio Azteca, Mexico City",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 54,
+      "group": "A",
+      "home": "South Africa",
+      "away": "South Korea",
+      "homeSlot": "South Africa",
+      "awaySlot": "South Korea",
+      "date": "2026-06-25T01:00:00Z",
+      "venue": "Estadio BBVA, Monterrey",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 55,
+      "group": "E",
+      "home": "Curaçao",
+      "away": "Côte d'Ivoire",
+      "homeSlot": "Curaçao",
+      "awaySlot": "Côte d'Ivoire",
+      "date": "2026-06-25T20:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 56,
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Germany",
+      "homeSlot": "Ecuador",
+      "awaySlot": "Germany",
+      "date": "2026-06-25T20:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 57,
+      "group": "F",
+      "home": "Japan",
+      "away": "Sweden",
+      "homeSlot": "Japan",
+      "awaySlot": "UEFA Playoff B",
+      "date": "2026-06-25T23:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 58,
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "homeSlot": "Tunisia",
+      "awaySlot": "Netherlands",
+      "date": "2026-06-25T23:00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 59,
+      "group": "D",
+      "home": "USA",
+      "away": "Turkey",
+      "homeSlot": "USA",
+      "awaySlot": "UEFA Playoff C",
+      "date": "2026-06-26T02:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 60,
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Australia",
+      "homeSlot": "Paraguay",
+      "awaySlot": "Australia",
+      "date": "2026-06-26T02:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 61,
+      "group": "I",
+      "home": "Norway",
+      "away": "France",
+      "homeSlot": "Norway",
+      "awaySlot": "France",
+      "date": "2026-06-26T19:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 62,
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraq",
+      "homeSlot": "Senegal",
+      "awaySlot": "FIFA Playoff 2",
+      "date": "2026-06-26T19:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 63,
+      "group": "H",
+      "home": "Cabo Verde",
+      "away": "Saudi Arabia",
+      "homeSlot": "Cabo Verde",
+      "awaySlot": "Saudi Arabia",
+      "date": "2026-06-27T00:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 64,
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Spain",
+      "homeSlot": "Uruguay",
+      "awaySlot": "Spain",
+      "date": "2026-06-27T00:00:00Z",
+      "venue": "Estadio Akron, Guadalajara",
+      "hg": 0,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 65,
+      "group": "G",
+      "home": "Egypt",
+      "away": "Iran",
+      "homeSlot": "Egypt",
+      "awaySlot": "Iran",
+      "date": "2026-06-27T03:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 66,
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "homeSlot": "New Zealand",
+      "awaySlot": "Belgium",
+      "date": "2026-06-27T03:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 67,
+      "group": "L",
+      "home": "Panama",
+      "away": "England",
+      "homeSlot": "Panama",
+      "awaySlot": "England",
+      "date": "2026-06-27T21:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "hg": 0,
+      "ag": 2,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 68,
+      "group": "L",
+      "home": "Croatia",
+      "away": "Ghana",
+      "homeSlot": "Croatia",
+      "awaySlot": "Ghana",
+      "date": "2026-06-27T21:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 69,
+      "group": "K",
+      "home": "Colombia",
+      "away": "Portugal",
+      "homeSlot": "Colombia",
+      "awaySlot": "Portugal",
+      "date": "2026-06-27T23:30:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 70,
+      "group": "K",
+      "home": "DR Congo",
+      "away": "Uzbekistan",
+      "homeSlot": "FIFA Playoff 1",
+      "awaySlot": "Uzbekistan",
+      "date": "2026-06-27T23:30:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "home"
+    },
+    {
+      "id": 71,
+      "group": "J",
+      "home": "Algeria",
+      "away": "Austria",
+      "homeSlot": "Algeria",
+      "awaySlot": "Austria",
+      "date": "2026-06-28T02:00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    },
+    {
+      "id": 72,
+      "group": "J",
+      "home": "Jordan",
+      "away": "Argentina",
+      "homeSlot": "Jordan",
+      "awaySlot": "Argentina",
+      "date": "2026-06-28T02:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "hg": 0,
+      "ag": 2,
+      "corners": 9,
+      "yellows": 4,
+      "reds": 0,
+      "winner": "away"
+    }
+  ],
+  "knockout": [
+    {
+      "id": 73,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-28T19:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "homeSlot": "Runner-up Group A",
+      "awaySlot": "Runner-up Group B",
+      "home": "South Korea",
+      "away": "Canada",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.498,
+      "matchupConfidence": 0.1217,
+      "alternatives": [
+        {
+          "home": "South Korea",
+          "away": "Canada",
+          "prob": 0.1217
+        },
+        {
+          "home": "Mexico",
+          "away": "Canada",
+          "prob": 0.12
+        },
+        {
+          "home": "Czech Republic",
+          "away": "Canada",
+          "prob": 0.118
+        },
+        {
+          "home": "Czech Republic",
+          "away": "Switzerland",
+          "prob": 0.0777
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-29T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "homeSlot": "Winner Group C",
+      "awaySlot": "Runner-up Group F",
+      "home": "Brazil",
+      "away": "Japan",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.625,
+      "matchupConfidence": 0.213,
+      "alternatives": [
+        {
+          "home": "Brazil",
+          "away": "Japan",
+          "prob": 0.213
+        },
+        {
+          "home": "Brazil",
+          "away": "Netherlands",
+          "prob": 0.1723
+        },
+        {
+          "home": "Brazil",
+          "away": "Sweden",
+          "prob": 0.1633
+        },
+        {
+          "home": "Brazil",
+          "away": "Tunisia",
+          "prob": 0.124
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-29T20:30:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "homeSlot": "Winner Group E",
+      "awaySlot": "Best 3rd (Groups A/B/C/D/F)",
+      "home": "Germany",
+      "away": "Scotland",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.6253,
+      "matchupConfidence": 0.062,
+      "alternatives": [
+        {
+          "home": "Germany",
+          "away": "Scotland",
+          "prob": 0.062
+        },
+        {
+          "home": "Germany",
+          "away": "Morocco",
+          "prob": 0.0507
+        },
+        {
+          "home": "Germany",
+          "away": "Bosnia & Herzegovina",
+          "prob": 0.0443
+        },
+        {
+          "home": "Ecuador",
+          "away": "Scotland",
+          "prob": 0.0377
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-30T01:00:00Z",
+      "venue": "Estadio BBVA, Monterrey",
+      "homeSlot": "Winner Group F",
+      "awaySlot": "Runner-up Group C",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.4907,
+      "matchupConfidence": 0.2423,
+      "alternatives": [
+        {
+          "home": "Netherlands",
+          "away": "Morocco",
+          "prob": 0.2423
+        },
+        {
+          "home": "Netherlands",
+          "away": "Scotland",
+          "prob": 0.1393
+        },
+        {
+          "home": "Netherlands",
+          "away": "Brazil",
+          "prob": 0.1197
+        },
+        {
+          "home": "Japan",
+          "away": "Morocco",
+          "prob": 0.111
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-30T17:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "homeSlot": "Runner-up Group E",
+      "awaySlot": "Runner-up Group I",
+      "home": "Ecuador",
+      "away": "Norway",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.4667,
+      "matchupConfidence": 0.1403,
+      "alternatives": [
+        {
+          "home": "Ecuador",
+          "away": "Norway",
+          "prob": 0.1403
+        },
+        {
+          "home": "Ecuador",
+          "away": "Senegal",
+          "prob": 0.1233
+        },
+        {
+          "home": "Germany",
+          "away": "Norway",
+          "prob": 0.112
+        },
+        {
+          "home": "Ecuador",
+          "away": "France",
+          "prob": 0.1083
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-06-30T21:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "homeSlot": "Winner Group I",
+      "awaySlot": "Best 3rd (Groups C/D/F/G/H)",
+      "home": "France",
+      "away": "Iran",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.658,
+      "matchupConfidence": 0.0617,
+      "alternatives": [
+        {
+          "home": "France",
+          "away": "Iran",
+          "prob": 0.0617
+        },
+        {
+          "home": "France",
+          "away": "Egypt",
+          "prob": 0.0613
+        },
+        {
+          "home": "France",
+          "away": "Saudi Arabia",
+          "prob": 0.0443
+        },
+        {
+          "home": "France",
+          "away": "Scotland",
+          "prob": 0.0393
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-01T01:00:00Z",
+      "venue": "Estadio Azteca, Mexico City",
+      "homeSlot": "Winner Group A",
+      "awaySlot": "Best 3rd (Groups C/E/F/H/I)",
+      "home": "Mexico",
+      "away": "Côte d'Ivoire",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.4427,
+      "matchupConfidence": 0.074,
+      "alternatives": [
+        {
+          "home": "Mexico",
+          "away": "Côte d'Ivoire",
+          "prob": 0.074
+        },
+        {
+          "home": "Mexico",
+          "away": "Senegal",
+          "prob": 0.0577
+        },
+        {
+          "home": "Mexico",
+          "away": "Norway",
+          "prob": 0.0557
+        },
+        {
+          "home": "Mexico",
+          "away": "Ecuador",
+          "prob": 0.053
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-01T16:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "homeSlot": "Winner Group L",
+      "awaySlot": "Best 3rd (Groups E/H/I/J/K)",
+      "home": "England",
+      "away": "Austria",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.6343,
+      "matchupConfidence": 0.093,
+      "alternatives": [
+        {
+          "home": "England",
+          "away": "Austria",
+          "prob": 0.093
+        },
+        {
+          "home": "England",
+          "away": "Algeria",
+          "prob": 0.0903
+        },
+        {
+          "home": "England",
+          "away": "DR Congo",
+          "prob": 0.0667
+        },
+        {
+          "home": "England",
+          "away": "Uzbekistan",
+          "prob": 0.06
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-01T20:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "homeSlot": "Winner Group G",
+      "awaySlot": "Best 3rd (Groups A/E/H/I/J)",
+      "home": "Belgium",
+      "away": "South Africa",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.6037,
+      "matchupConfidence": 0.0727,
+      "alternatives": [
+        {
+          "home": "Belgium",
+          "away": "South Korea",
+          "prob": 0.083
+        },
+        {
+          "home": "Belgium",
+          "away": "South Africa",
+          "prob": 0.0727
+        },
+        {
+          "home": "Belgium",
+          "away": "Mexico",
+          "prob": 0.059
+        },
+        {
+          "home": "Belgium",
+          "away": "Czech Republic",
+          "prob": 0.0583
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-02T00:00:00Z",
+      "venue": "Levi's Stadium, Santa Clara",
+      "homeSlot": "Winner Group D",
+      "awaySlot": "Best 3rd (Groups B/E/F/I/J)",
+      "home": "Turkey",
+      "away": "Bosnia & Herzegovina",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.5483,
+      "matchupConfidence": 0.0647,
+      "alternatives": [
+        {
+          "home": "Turkey",
+          "away": "Bosnia & Herzegovina",
+          "prob": 0.0647
+        },
+        {
+          "home": "USA",
+          "away": "Bosnia & Herzegovina",
+          "prob": 0.05
+        },
+        {
+          "home": "Paraguay",
+          "away": "Bosnia & Herzegovina",
+          "prob": 0.0407
+        },
+        {
+          "home": "USA",
+          "away": "Canada",
+          "prob": 0.0347
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-02T19:00:00Z",
+      "venue": "BMO Field, Toronto",
+      "homeSlot": "Runner-up Group K",
+      "awaySlot": "Runner-up Group L",
+      "home": "Colombia",
+      "away": "Croatia",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.5517,
+      "matchupConfidence": 0.1803,
+      "alternatives": [
+        {
+          "home": "Colombia",
+          "away": "Croatia",
+          "prob": 0.1803
+        },
+        {
+          "home": "Portugal",
+          "away": "Croatia",
+          "prob": 0.154
+        },
+        {
+          "home": "Colombia",
+          "away": "England",
+          "prob": 0.11
+        },
+        {
+          "home": "Portugal",
+          "away": "England",
+          "prob": 0.0833
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-02T23:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "homeSlot": "Winner Group H",
+      "awaySlot": "Runner-up Group J",
+      "home": "Spain",
+      "away": "Algeria",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.664,
+      "matchupConfidence": 0.2223,
+      "alternatives": [
+        {
+          "home": "Spain",
+          "away": "Austria",
+          "prob": 0.289
+        },
+        {
+          "home": "Spain",
+          "away": "Algeria",
+          "prob": 0.2223
+        },
+        {
+          "home": "Spain",
+          "away": "Argentina",
+          "prob": 0.1627
+        },
+        {
+          "home": "Uruguay",
+          "away": "Austria",
+          "prob": 0.087
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-03T03:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "homeSlot": "Winner Group B",
+      "awaySlot": "Best 3rd (Groups E/F/G/I/J)",
+      "home": "Switzerland",
+      "away": "Egypt",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.5897,
+      "matchupConfidence": 0.0677,
+      "alternatives": [
+        {
+          "home": "Switzerland",
+          "away": "Iran",
+          "prob": 0.0753
+        },
+        {
+          "home": "Switzerland",
+          "away": "Egypt",
+          "prob": 0.0677
+        },
+        {
+          "home": "Switzerland",
+          "away": "New Zealand",
+          "prob": 0.0487
+        },
+        {
+          "home": "Switzerland",
+          "away": "DR Congo",
+          "prob": 0.0337
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-03T18:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "homeSlot": "Runner-up Group D",
+      "awaySlot": "Runner-up Group G",
+      "home": "Paraguay",
+      "away": "New Zealand",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.4907,
+      "matchupConfidence": 0.034,
+      "alternatives": [
+        {
+          "home": "Paraguay",
+          "away": "Egypt",
+          "prob": 0.0943
+        },
+        {
+          "home": "USA",
+          "away": "Egypt",
+          "prob": 0.0927
+        },
+        {
+          "home": "Turkey",
+          "away": "Egypt",
+          "prob": 0.092
+        },
+        {
+          "home": "Turkey",
+          "away": "Iran",
+          "prob": 0.0803
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-03T22:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "homeSlot": "Winner Group J",
+      "awaySlot": "Runner-up Group H",
+      "home": "Argentina",
+      "away": "Uruguay",
+      "hg": 1,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.59,
+      "matchupConfidence": 0.3913,
+      "alternatives": [
+        {
+          "home": "Argentina",
+          "away": "Uruguay",
+          "prob": 0.3913
+        },
+        {
+          "home": "Argentina",
+          "away": "Spain",
+          "prob": 0.149
+        },
+        {
+          "home": "Austria",
+          "away": "Uruguay",
+          "prob": 0.105
+        },
+        {
+          "home": "Argentina",
+          "away": "Saudi Arabia",
+          "prob": 0.0833
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "round": "Round of 32",
+      "multiplier": 1,
+      "date": "2026-07-04T01:30:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "homeSlot": "Winner Group K",
+      "awaySlot": "Best 3rd (Groups D/E/I/J/L)",
+      "home": "Portugal",
+      "away": "Ghana",
+      "hg": 2,
+      "ag": 0,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.715,
+      "matchupConfidence": 0.1117,
+      "alternatives": [
+        {
+          "home": "Portugal",
+          "away": "Ghana",
+          "prob": 0.1117
+        },
+        {
+          "home": "Colombia",
+          "away": "Ghana",
+          "prob": 0.0867
+        },
+        {
+          "home": "Portugal",
+          "away": "Panama",
+          "prob": 0.0773
+        },
+        {
+          "home": "Portugal",
+          "away": "Croatia",
+          "prob": 0.065
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-04T17:00:00Z",
+      "venue": "NRG Stadium, Houston",
+      "homeSlot": "Winner Match 73",
+      "awaySlot": "Winner Match 75",
+      "home": "Canada",
+      "away": "Germany",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": false,
+      "homeWinProb": 0.378,
+      "matchupConfidence": 0.0867,
+      "alternatives": [
+        {
+          "home": "Canada",
+          "away": "Germany",
+          "prob": 0.0867
+        },
+        {
+          "home": "Switzerland",
+          "away": "Germany",
+          "prob": 0.072
+        },
+        {
+          "home": "Mexico",
+          "away": "Germany",
+          "prob": 0.0603
+        },
+        {
+          "home": "South Korea",
+          "away": "Germany",
+          "prob": 0.0527
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-04T21:00:00Z",
+      "venue": "Lincoln Financial Field, Philadelphia",
+      "homeSlot": "Winner Match 74",
+      "awaySlot": "Winner Match 77",
+      "home": "Brazil",
+      "away": "Ecuador",
+      "hg": 1,
+      "ag": 0,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.543,
+      "matchupConfidence": 0.0957,
+      "alternatives": [
+        {
+          "home": "Brazil",
+          "away": "Ecuador",
+          "prob": 0.0957
+        },
+        {
+          "home": "Brazil",
+          "away": "France",
+          "prob": 0.0847
+        },
+        {
+          "home": "Brazil",
+          "away": "Norway",
+          "prob": 0.0837
+        },
+        {
+          "home": "Brazil",
+          "away": "Germany",
+          "prob": 0.0737
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-05T20:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "homeSlot": "Winner Match 76",
+      "awaySlot": "Winner Match 78",
+      "home": "Netherlands",
+      "away": "France",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.503,
+      "matchupConfidence": 0.117,
+      "alternatives": [
+        {
+          "home": "Netherlands",
+          "away": "France",
+          "prob": 0.117
+        },
+        {
+          "home": "Morocco",
+          "away": "France",
+          "prob": 0.1117
+        },
+        {
+          "home": "Brazil",
+          "away": "France",
+          "prob": 0.069
+        },
+        {
+          "home": "Japan",
+          "away": "France",
+          "prob": 0.0487
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-06T00:00:00Z",
+      "venue": "Estadio Azteca, Mexico City",
+      "homeSlot": "Winner Match 79",
+      "awaySlot": "Winner Match 80",
+      "home": "Mexico",
+      "away": "England",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.4007,
+      "matchupConfidence": 0.0887,
+      "alternatives": [
+        {
+          "home": "Mexico",
+          "away": "England",
+          "prob": 0.0887
+        },
+        {
+          "home": "Czech Republic",
+          "away": "England",
+          "prob": 0.0513
+        },
+        {
+          "home": "South Korea",
+          "away": "England",
+          "prob": 0.045
+        },
+        {
+          "home": "Côte d'Ivoire",
+          "away": "England",
+          "prob": 0.045
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-06T19:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "homeSlot": "Winner Match 83",
+      "awaySlot": "Winner Match 84",
+      "home": "Colombia",
+      "away": "Spain",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.4287,
+      "matchupConfidence": 0.1253,
+      "alternatives": [
+        {
+          "home": "Colombia",
+          "away": "Spain",
+          "prob": 0.1253
+        },
+        {
+          "home": "Portugal",
+          "away": "Spain",
+          "prob": 0.1223
+        },
+        {
+          "home": "Croatia",
+          "away": "Spain",
+          "prob": 0.1123
+        },
+        {
+          "home": "England",
+          "away": "Spain",
+          "prob": 0.0847
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-07T00:00:00Z",
+      "venue": "Lumen Field, Seattle",
+      "homeSlot": "Winner Match 81",
+      "awaySlot": "Winner Match 82",
+      "home": "Belgium",
+      "away": "Turkey",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.585,
+      "matchupConfidence": 0.081,
+      "alternatives": [
+        {
+          "home": "Belgium",
+          "away": "Turkey",
+          "prob": 0.081
+        },
+        {
+          "home": "Belgium",
+          "away": "USA",
+          "prob": 0.069
+        },
+        {
+          "home": "Belgium",
+          "away": "Paraguay",
+          "prob": 0.0577
+        },
+        {
+          "home": "Belgium",
+          "away": "Australia",
+          "prob": 0.0373
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-07T16:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "homeSlot": "Winner Match 86",
+      "awaySlot": "Winner Match 88",
+      "home": "Paraguay",
+      "away": "Portugal",
+      "hg": 0,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": false,
+      "homeWinProb": 0.377,
+      "matchupConfidence": 0.054,
+      "alternatives": [
+        {
+          "home": "Egypt",
+          "away": "Portugal",
+          "prob": 0.0727
+        },
+        {
+          "home": "Iran",
+          "away": "Portugal",
+          "prob": 0.0627
+        },
+        {
+          "home": "Belgium",
+          "away": "Portugal",
+          "prob": 0.0627
+        },
+        {
+          "home": "Paraguay",
+          "away": "Portugal",
+          "prob": 0.054
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "round": "Round of 16",
+      "multiplier": 2,
+      "date": "2026-07-07T20:00:00Z",
+      "venue": "BC Place, Vancouver",
+      "homeSlot": "Winner Match 85",
+      "awaySlot": "Winner Match 87",
+      "home": "Switzerland",
+      "away": "Argentina",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.366,
+      "matchupConfidence": 0.1927,
+      "alternatives": [
+        {
+          "home": "Switzerland",
+          "away": "Argentina",
+          "prob": 0.1927
+        },
+        {
+          "home": "Switzerland",
+          "away": "Uruguay",
+          "prob": 0.098
+        },
+        {
+          "home": "Canada",
+          "away": "Argentina",
+          "prob": 0.054
+        },
+        {
+          "home": "Switzerland",
+          "away": "Spain",
+          "prob": 0.0533
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "round": "Quarter-finals",
+      "multiplier": 4,
+      "date": "2026-07-09T20:00:00Z",
+      "venue": "Gillette Stadium, Boston",
+      "homeSlot": "Winner Match 89",
+      "awaySlot": "Winner Match 90",
+      "home": "Germany",
+      "away": "Brazil",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": false,
+      "homeWinProb": 0.412,
+      "matchupConfidence": 0.08,
+      "alternatives": [
+        {
+          "home": "Germany",
+          "away": "Brazil",
+          "prob": 0.08
+        },
+        {
+          "home": "Germany",
+          "away": "Ecuador",
+          "prob": 0.0377
+        },
+        {
+          "home": "Switzerland",
+          "away": "Brazil",
+          "prob": 0.032
+        },
+        {
+          "home": "Germany",
+          "away": "France",
+          "prob": 0.0307
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "round": "Quarter-finals",
+      "multiplier": 4,
+      "date": "2026-07-10T19:00:00Z",
+      "venue": "SoFi Stadium, Los Angeles",
+      "homeSlot": "Winner Match 93",
+      "awaySlot": "Winner Match 94",
+      "home": "Spain",
+      "away": "Belgium",
+      "hg": 1,
+      "ag": 1,
+      "corners": 9,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": false,
+      "homeWinProb": 0.657,
+      "matchupConfidence": 0.0993,
+      "alternatives": [
+        {
+          "home": "Spain",
+          "away": "Belgium",
+          "prob": 0.0993
+        },
+        {
+          "home": "Colombia",
+          "away": "Belgium",
+          "prob": 0.036
+        },
+        {
+          "home": "Portugal",
+          "away": "Belgium",
+          "prob": 0.036
+        },
+        {
+          "home": "Spain",
+          "away": "Turkey",
+          "prob": 0.0323
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "round": "Quarter-finals",
+      "multiplier": 4,
+      "date": "2026-07-11T21:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "homeSlot": "Winner Match 91",
+      "awaySlot": "Winner Match 92",
+      "home": "France",
+      "away": "England",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.5187,
+      "matchupConfidence": 0.0837,
+      "alternatives": [
+        {
+          "home": "France",
+          "away": "England",
+          "prob": 0.0837
+        },
+        {
+          "home": "Netherlands",
+          "away": "England",
+          "prob": 0.0467
+        },
+        {
+          "home": "Morocco",
+          "away": "England",
+          "prob": 0.0443
+        },
+        {
+          "home": "Brazil",
+          "away": "England",
+          "prob": 0.031
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "round": "Quarter-finals",
+      "multiplier": 4,
+      "date": "2026-07-12T01:00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium, Kansas City",
+      "homeSlot": "Winner Match 95",
+      "awaySlot": "Winner Match 96",
+      "home": "Portugal",
+      "away": "Argentina",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.4423,
+      "matchupConfidence": 0.0957,
+      "alternatives": [
+        {
+          "home": "Portugal",
+          "away": "Argentina",
+          "prob": 0.0957
+        },
+        {
+          "home": "Colombia",
+          "away": "Argentina",
+          "prob": 0.0567
+        },
+        {
+          "home": "Portugal",
+          "away": "Switzerland",
+          "prob": 0.053
+        },
+        {
+          "home": "Portugal",
+          "away": "Uruguay",
+          "prob": 0.0423
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "round": "Semi-finals",
+      "multiplier": 8,
+      "date": "2026-07-14T19:00:00Z",
+      "venue": "AT&T Stadium, Dallas",
+      "homeSlot": "Winner Match 97",
+      "awaySlot": "Winner Match 98",
+      "home": "Brazil",
+      "away": "Spain",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.4653,
+      "matchupConfidence": 0.06,
+      "alternatives": [
+        {
+          "home": "Brazil",
+          "away": "Spain",
+          "prob": 0.06
+        },
+        {
+          "home": "Germany",
+          "away": "Spain",
+          "prob": 0.0517
+        },
+        {
+          "home": "Germany",
+          "away": "Belgium",
+          "prob": 0.0287
+        },
+        {
+          "home": "Ecuador",
+          "away": "Spain",
+          "prob": 0.0263
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "round": "Semi-finals",
+      "multiplier": 8,
+      "date": "2026-07-15T19:00:00Z",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "homeSlot": "Winner Match 99",
+      "awaySlot": "Winner Match 100",
+      "home": "England",
+      "away": "Argentina",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "away",
+      "penalties": true,
+      "homeWinProb": 0.5,
+      "matchupConfidence": 0.0457,
+      "alternatives": [
+        {
+          "home": "England",
+          "away": "Argentina",
+          "prob": 0.0457
+        },
+        {
+          "home": "France",
+          "away": "Argentina",
+          "prob": 0.0383
+        },
+        {
+          "home": "England",
+          "away": "Portugal",
+          "prob": 0.0313
+        },
+        {
+          "home": "France",
+          "away": "Portugal",
+          "prob": 0.0277
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "round": "Third-place",
+      "multiplier": 8,
+      "date": "2026-07-18T21:00:00Z",
+      "venue": "Hard Rock Stadium, Miami",
+      "homeSlot": "Loser Match 101",
+      "awaySlot": "Loser Match 102",
+      "home": "Brazil",
+      "away": "England",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.496,
+      "matchupConfidence": 0.0057,
+      "alternatives": [
+        {
+          "home": "Germany",
+          "away": "Argentina",
+          "prob": 0.0123
+        },
+        {
+          "home": "Germany",
+          "away": "France",
+          "prob": 0.0103
+        },
+        {
+          "home": "Brazil",
+          "away": "Argentina",
+          "prob": 0.0093
+        },
+        {
+          "home": "Germany",
+          "away": "England",
+          "prob": 0.0087
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "round": "Final",
+      "multiplier": 16,
+      "date": "2026-07-19T19:00:00Z",
+      "venue": "MetLife Stadium, East Rutherford",
+      "homeSlot": "Winner Match 101",
+      "awaySlot": "Winner Match 102",
+      "home": "Spain",
+      "away": "Argentina",
+      "hg": 1,
+      "ag": 1,
+      "corners": 10,
+      "yellows": 5,
+      "reds": 0,
+      "winner": "home",
+      "penalties": true,
+      "homeWinProb": 0.492,
+      "matchupConfidence": 0.028,
+      "alternatives": [
+        {
+          "home": "Spain",
+          "away": "Argentina",
+          "prob": 0.028
+        },
+        {
+          "home": "Spain",
+          "away": "England",
+          "prob": 0.021
+        },
+        {
+          "home": "Brazil",
+          "away": "Argentina",
+          "prob": 0.019
+        },
+        {
+          "home": "Brazil",
+          "away": "England",
+          "prob": 0.016
+        }
+      ]
+    }
+  ]
+}
