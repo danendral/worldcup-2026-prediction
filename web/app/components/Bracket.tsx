@@ -106,10 +106,13 @@ export function Bracket({
       />
 
       <div className="mt-8 overflow-x-auto pb-4">
-        <div className="flex min-w-[1180px] gap-5">
-          {ROUNDS.map((r) => {
+        <div className="flex min-w-[1180px]">
+          {ROUNDS.map((r, ri) => {
             const ms = byRound[r.key] || [];
             const isFinalCol = r.key === "Final";
+            // Every round except the Final feeds the round on its right; draw
+            // bracket connectors out of all but the last column.
+            const hasConnectors = ri < ROUNDS.length - 1;
             return (
               <div
                 key={r.key}
@@ -127,8 +130,8 @@ export function Bracket({
 
                 <div
                   className={`flex flex-1 flex-col ${
-                    isFinalCol ? "justify-center" : "justify-around"
-                  } gap-3`}
+                    isFinalCol ? "justify-center" : ""
+                  }`}
                 >
                   {isFinalCol && finalMatch ? (
                     <FinalCard
@@ -140,15 +143,23 @@ export function Bracket({
                       dim={!!litIds && !litIds.has(finalMatch.id)}
                     />
                   ) : (
-                    ms.map((m) => (
-                      <BracketCard
-                        key={m.id}
-                        m={m}
-                        onClick={() => onSelect(m)}
-                        onHover={(t) => setPathTeam(t)}
-                        lit={litIds?.has(m.id) ?? false}
-                        dim={!!litIds && !litIds.has(m.id)}
-                      />
+                    pairs(ms).map((pair, pi) => (
+                      <Pair key={pi} show={hasConnectors} single={pair.length < 2}>
+                        {pair.map((m) => (
+                          <div
+                            key={m.id}
+                            className="flex flex-1 flex-col justify-center"
+                          >
+                            <BracketCard
+                              m={m}
+                              onClick={() => onSelect(m)}
+                              onHover={(t) => setPathTeam(t)}
+                              lit={litIds?.has(m.id) ?? false}
+                              dim={!!litIds && !litIds.has(m.id)}
+                            />
+                          </div>
+                        ))}
+                      </Pair>
                     ))
                   )}
                 </div>
@@ -166,6 +177,74 @@ export function Bracket({
         <span>● click for match detail · scroll horizontally →</span>
       </div>
     </section>
+  );
+}
+
+// Split a round's matches into the consecutive [top, bottom] pairs that each
+// feed one tie in the next round. The last pair may be a single (e.g. an
+// odd-sized round), which still renders without a join line.
+function pairs<T>(arr: T[]): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += 2) out.push(arr.slice(i, i + 2));
+  return out;
+}
+
+// Groups the two cards that feed one next-round tie and draws the classic
+// bracket connector between them: a short stub off each card's centre, a
+// vertical line joining the two, and a lead-out from the join's midpoint into
+// the next round. The two cards each sit in an equal-height `flex-1` row that
+// vertically centres them, so the top card's centre lands at exactly 25% of the
+// pair box and the bottom card's at 75% — making the absolutely-positioned
+// lines align with the card centres at any card height, no measuring needed.
+// The lead-out exits at the box centre (50%), which lines up with the next
+// round's card (also centred in its own pair box).
+function Pair({
+  show,
+  single,
+  children,
+}: {
+  show: boolean;
+  single: boolean;
+  children: React.ReactNode;
+}) {
+  const line = "rgba(236,230,216,0.16)";
+  return (
+    <div className="relative flex flex-1 items-stretch">
+      <div className="flex flex-1 flex-col">{children}</div>
+      {show && (
+        <div aria-hidden className="pointer-events-none relative" style={{ width: 22 }}>
+          {single ? (
+            // lone card centred in the box: one straight stub into the next round
+            <span
+              className="absolute top-1/2 left-0"
+              style={{ width: 22, height: 1.5, background: line, transform: "translateY(-50%)" }}
+            />
+          ) : (
+            <>
+              {/* stubs off the top (25%) and bottom (75%) card centres */}
+              <span
+                className="absolute left-0"
+                style={{ top: "25%", width: 11, height: 1.5, background: line, transform: "translateY(-50%)" }}
+              />
+              <span
+                className="absolute left-0"
+                style={{ top: "75%", width: 11, height: 1.5, background: line, transform: "translateY(-50%)" }}
+              />
+              {/* vertical line joining the two stubs (25% → 75%) */}
+              <span
+                className="absolute"
+                style={{ left: 11, top: "25%", bottom: "25%", width: 1.5, background: line }}
+              />
+              {/* lead-out from the join's midpoint (50%) into the next round */}
+              <span
+                className="absolute top-1/2 left-[11px]"
+                style={{ width: 11, height: 1.5, background: line, transform: "translateY(-50%)" }}
+              />
+            </>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
 
