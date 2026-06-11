@@ -158,8 +158,6 @@ src/
   ancillary.py         corners / yellows / reds
   submission.py        assemble final DataFrames
 notebook.ipynb         the actual submission
-docs/superpowers/specs/2026-05-30-worldcup-prediction-design.md
-                       full design document
 ```
 
 ## Running It

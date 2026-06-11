@@ -24,6 +24,9 @@ data/artifacts/
 scratch_*.py
 dev-server.log
 
+# Design notes (kept local, not part of the public repo)
+docs/superpowers/
+
 # OS cruft
 .DS_Store
 Thumbs.db
