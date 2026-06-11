@@ -157,7 +157,7 @@ src/
   bracket_sim.py       Monte Carlo group → knockout
   ancillary.py         corners / yellows / reds
   submission.py        assemble final DataFrames
-notebook.ipynb         the actual submission
+src/notebook.ipynb         the actual submission
 ```
 
 ## Running It
@@ -174,9 +174,9 @@ python -m src.bracket_sim     # standalone bracket simulation
 
 # Run the submission notebook end-to-end
 python -c "import nbformat; from nbclient import NotebookClient; \
-nb=nbformat.read('notebook.ipynb', as_version=4); \
+nb=nbformat.read('src/notebook.ipynb', as_version=4); \
 NotebookClient(nb, timeout=900).execute(); \
-nbformat.write(nb, 'notebook.ipynb')"
+nbformat.write(nb, 'src/notebook.ipynb')"
 ```
 
 Requires Python 3.11+, `numpy`, `pandas`, `scipy`, `nbformat`, `nbclient`. Odds-API access needs a free `THE_ODDS_API_KEY` from [the-odds-api.com](https://the-odds-api.com) (one full pull uses ~10 of the 500 free monthly credits).
