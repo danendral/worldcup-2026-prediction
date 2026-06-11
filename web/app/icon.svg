@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#0a0b0d"/>
+  <g transform="translate(16 16)" stroke="#e8b542" stroke-width="1.4" stroke-linejoin="round" fill="none">
+    <circle r="11" fill="#0c0e11"/>
+    <!-- central pentagon -->
+    <polygon points="0,-4.6 4.4,-1.4 2.7,3.7 -2.7,3.7 -4.4,-1.4" fill="#e8b542" stroke="#e8b542"/>
+    <!-- seams radiating to the rim -->
+    <path d="M0,-4.6 L0,-11"/>
+    <path d="M4.4,-1.4 L10.5,-3.4"/>
+    <path d="M2.7,3.7 L6.5,8.9"/>
+    <path d="M-2.7,3.7 L-6.5,8.9"/>
+    <path d="M-4.4,-1.4 L-10.5,-3.4"/>
+  </g>
+</svg>
