@@ -7,7 +7,7 @@
 """
 from __future__ import annotations
 import json
-from collections import Counter
+
 from pathlib import Path
 
 import numpy as np
@@ -62,18 +62,23 @@ def build_group_predictions(model: dict, fixtures_df: pd.DataFrame,
     return rows
 
 
-def _pick_matchup(counter: Counter, used: set[str]) -> tuple[str, str]:
-    """Pick the most-likely (h, a) pair. If the top pair includes a team
-    we've already used in another slot, fall back to next.
-    NOTE: Round-of-32 slots can re-use teams across slots only if the
-    bracket allows — actually each team can only be in ONE knockout slot.
-    So we de-dupe here.
+def _r32_from_modal_slots(sim_agg: dict, knockout_slots: pd.DataFrame) -> dict[int, tuple[str, str]]:
+    """Resolve all R32 matchups from the modal slot→team mapping.
+
+    modal_slot_team is derived from the most-common complete group finishing order
+    per group across all simulations — one consistent world-state, so the same team
+    can never appear in two slots simultaneously.
     """
-    for (h, a), _ in counter.most_common():
-        if h not in used and a not in used:
-            return h, a
-    # Fallback: take top pair even if dup (shouldn't happen)
-    return counter.most_common(1)[0][0]
+    slot_team = sim_agg["modal_slot_team"]
+    bracket: dict[int, tuple[str, str]] = {}
+    for _, krow in knockout_slots.iterrows():
+        if krow["round"] != "Round of 32":
+            continue
+        mid = int(krow["match_id"])
+        h = slot_team.get(krow["slot_home"], "?")
+        a = slot_team.get(krow["slot_away"], "?")
+        bracket[mid] = (h, a)
+    return bracket
 
 
 def build_knockout_predictions(model: dict, knockout_slots: pd.DataFrame,
@@ -92,8 +97,10 @@ def build_knockout_predictions(model: dict, knockout_slots: pd.DataFrame,
     corners_l, yel_l, red_l = [], [], []
     match_winner_l, penalties_l = [], []
 
-    # Track used teams for R32 only
-    used_r32: set[str] = set()
+    # Resolve all R32 matchups from the modal group standings — one consistent
+    # world-state, guaranteed no duplicate teams across slots.
+    r32_bracket = _r32_from_modal_slots(sim_agg, rows)
+
     # Track predicted winner for each match_id (for downstream rounds)
     predicted_winner: dict[int, str] = {}
     predicted_loser: dict[int, str] = {}
@@ -105,13 +112,8 @@ def build_knockout_predictions(model: dict, knockout_slots: pd.DataFrame,
         knockout = True
 
         if rnd == "Round of 32":
-            counter = sim_agg["pair_counts"].get(mid, Counter())
-            if not counter:
-                pred_h_team.append("?"); pred_a_team.append("?")
-            else:
-                h, a = _pick_matchup(counter, used_r32)
-                pred_h_team.append(h); pred_a_team.append(a)
-                used_r32.add(h); used_r32.add(a)
+            h, a = r32_bracket.get(mid, ("?", "?"))
+            pred_h_team.append(h); pred_a_team.append(a)
         else:
             # Resolve from predicted winners of upstream matches
             sh = krow["slot_home"]; sa = krow["slot_away"]
@@ -136,8 +138,11 @@ def build_knockout_predictions(model: dict, knockout_slots: pd.DataFrame,
             # If model says draw is most likely, fall back to higher of home/away
             if w_str == "draw":
                 w_str = "home" if ph >= pa else "away"
-            # Penalties: True if P(draw at 90 min) > 0.28
-            pen = bool(p_draw > 0.28)
+            # Penalties must agree with the predicted scoreline: a knockout tie
+            # is decided by penalties iff the displayed score is level. Deriving
+            # the flag from (h_star, a_star) keeps the card self-consistent (no
+            # "1-1 / 90′" contradictions) — see render in web Bracket/MatchModal.
+            pen = bool(h_star == a_star)
         else:
             # Fallback
             P = None; h_star = 1; a_star = 0

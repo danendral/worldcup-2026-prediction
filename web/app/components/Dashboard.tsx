@@ -40,13 +40,28 @@ export function Dashboard({ data }: { data: Predictions }) {
         <Teams teams={data.teams} onSelect={selectTeam} />
       </main>
 
-      <footer className="mx-auto max-w-[1320px] px-5 py-10 sm:px-8">
-        <div className="flex flex-col gap-3 border-t border-[rgba(236,230,216,0.08)] pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
-            FIFA World Cup 2026 · Prediction Engine · v1.0
+      <footer id="disclaimer" className="mx-auto max-w-[1320px] px-5 pb-8 pt-4 sm:px-8">
+        <div className="flex flex-col gap-4 border-t border-[rgba(236,230,216,0.08)] pt-5 sm:flex-row sm:items-start sm:justify-between">
+          <div className="space-y-1.5">
+            <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-mute">
+              FIFA World Cup 2026 · Prediction Engine
+            </div>
+            <p className="font-mono text-[9px] leading-relaxed tracking-[0.08em] text-mute">
+              <span className="font-semibold">Not betting advice.</span> Built for a DataCamp forecasting competition, not to price betting markets. Pre-tournament snapshot locked on 10 Jun 2026.
+            </p>
           </div>
-          <div className="max-w-[52ch] font-mono text-[9px] uppercase leading-relaxed tracking-[0.1em] text-mute/60">
-            {data.meta.model} · {data.meta.nSims.toLocaleString()} sims · as of {data.meta.asOf}
+          <div className="text-right">
+            <a
+              href="https://danendral.github.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-b border-[rgba(232,181,66,0.4)] font-mono text-[10px] uppercase tracking-[0.16em] text-signal transition-colors hover:border-signal hover:text-signal-soft"
+            >
+              Danendra
+            </a>
+            <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.1em] text-mute/40">
+              Developed by
+            </div>
           </div>
         </div>
       </footer>

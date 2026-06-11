@@ -212,25 +212,104 @@ def simulate_tournament(model: dict, group_fixtures: pd.DataFrame,
     return {
         "group_finish": group_finish,
         "group_of": group_of,
+        "group_records": group_records,
         "slot_team": slot_team,
         "knockout_teams": knockout_teams,
     }
+
+
+def _derive_slot_team(group_standings: dict[str, list[str]],
+                      team_strength: dict[str, float],
+                      knockout_slots: pd.DataFrame) -> dict[str, str]:
+    """Given modal group standings and a per-team strength score, resolve every R32 slot.
+
+    Steps mirror simulate_tournament's intent:
+    1. Assign Winner/Runner-up slots from standings.
+    2. Collect the 12 third-place teams, rank them by team_strength (higher = better)
+       to pick the top-8 best thirds. team_strength is the aggregate mean points the
+       team earned across all sims — a stable proxy for the per-sim (P, GD, GF) sort
+       that is always available (no dependency on one specific sim's records).
+    3. Assign the 8 qualifying thirds to the 8 Best 3rd slots via a guaranteed-COMPLETE
+       bipartite matching (Kuhn's augmenting-path algorithm). FIFA's slot allocation is
+       designed so a complete assignment always exists for any combination of 8 groups;
+       a plain greedy fill can dead-end (consume a team an only-one-option slot needs),
+       so we use augmenting paths to guarantee all 8 slots are filled.
+    """
+    slot_team: dict[str, str] = {}
+
+    # Step 1: Winner / Runner-up
+    for g, order in group_standings.items():
+        slot_team[f"Winner Group {g}"] = order[0]
+        slot_team[f"Runner-up Group {g}"] = order[1]
+
+    # Step 2: rank the 12 third-placers by aggregate strength, take best 8
+    group_of_team = {order[i]: g for g, order in group_standings.items() for i in range(4)}
+    third_place_teams = [order[2] for order in group_standings.values()]
+    third_sorted = sorted(third_place_teams, key=lambda t: -team_strength.get(t, 0.0))
+    best_eight = third_sorted[:8]  # strongest first
+
+    # Collect Best 3rd slots with their allowed group sets
+    best3rd_slots: list[tuple[str, set[str]]] = []
+    for _, krow in knockout_slots.iterrows():
+        for sf in ("slot_home", "slot_away"):
+            slot = krow[sf]
+            if not slot.startswith("Best 3rd"):
+                continue
+            inside = slot[slot.index("(") + 1: slot.index(")")].replace("Groups ", "")
+            best3rd_slots.append((slot, set(inside.split("/"))))
+
+    # Step 3: complete bipartite matching (teams -> slots) via Kuhn's algorithm.
+    # match_slot[slot_label] = team assigned to that slot.
+    match_slot: dict[str, str] = {}
+
+    def try_assign(team: str, visited: set[str]) -> bool:
+        g = group_of_team[team]
+        for slot, allowed in best3rd_slots:
+            if g not in allowed or slot in visited:
+                continue
+            visited.add(slot)
+            # slot free, or its current occupant can be re-homed elsewhere
+            if slot not in match_slot or try_assign(match_slot[slot], visited):
+                match_slot[slot] = team
+                return True
+        return False
+
+    # Process strongest teams first so they get priority in the matching
+    for team in best_eight:
+        try_assign(team, set())
+
+    for slot, team in match_slot.items():
+        slot_team[slot] = team
+
+    return slot_team
 
 
 def aggregate_simulations(model: dict, group_fixtures: pd.DataFrame,
                           knockout_slots: pd.DataFrame, n_sims: int = 5000,
                           match_odds: dict | None = None, seed: int = 20260611):
     """Run N sims. Return aggregate stats:
-       - knockout_team_pair_counts: {match_id: Counter[(home, away)]}
-       - knockout_home_wins: {match_id: int}
-       - knockout_draws_90: {match_id: int}
+       - pair_counts: {match_id: Counter[(home, away)]}
+       - home_wins: {match_id: int}
+       - drew_90: {match_id: int}
        - final_winners: Counter[team]
+       - modal_group_standings: {group: [1st, 2nd, 3rd, 4th]} — most-common complete
+         finishing order per group across all sims.
+       - modal_slot_team: {slot_label: team} derived from the modal group standings.
+         Use this to resolve R32 slots — it is guaranteed conflict-free because it
+         comes from one consistent world-state (the most-common complete group finish
+         ordering per group) rather than mixing counts across different sim outcomes.
     """
     rng = np.random.default_rng(seed)
     pair_counts: dict[int, Counter] = defaultdict(Counter)
     home_wins: dict[int, int] = defaultdict(int)
     drew_90: dict[int, int] = defaultdict(int)
     final_winners: Counter = Counter()
+    # Per-group most-common complete [1st,2nd,3rd,4th] ordering, plus an aggregate
+    # mean-points score per team (stable strength signal for ranking best-thirds).
+    group_order_counts: dict[str, Counter] = defaultdict(Counter)
+    points_sum: dict[str, float] = defaultdict(float)
+    points_n: dict[str, int] = defaultdict(int)
+
     for _ in range(n_sims):
         out = simulate_tournament(model, group_fixtures, knockout_slots,
                                   match_odds=match_odds, rng=rng)
@@ -238,17 +317,46 @@ def aggregate_simulations(model: dict, group_fixtures: pd.DataFrame,
             pair_counts[mid][(h, a)] += 1
             if hw: home_wins[mid] += 1
             if d: drew_90[mid] += 1
-        # Final (match 104) winner team
         final = out["knockout_teams"].get(104)
         if final:
             h, a, hw, _ = final
             final_winners[h if hw else a] += 1
+        # Track group finishing order and accumulate per-team points
+        group_of = out["group_of"]
+        group_finish = out["group_finish"]
+        for team, rec in out["group_records"].items():
+            points_sum[team] += rec["P"] + rec["GD"] * 0.01 + rec["GF"] * 0.0001
+            points_n[team] += 1
+        g_order: dict[str, list] = defaultdict(lambda: [None, None, None, None])
+        for team, rank in group_finish.items():
+            g_order[group_of[team]][rank - 1] = team
+        for g, order in g_order.items():
+            group_order_counts[g][tuple(order)] += 1
+
+    # Modal group standings: most-common complete ordering per group
+    modal_group_standings: dict[str, list[str]] = {
+        g: list(counter.most_common(1)[0][0])
+        for g, counter in group_order_counts.items()
+    }
+    # Mean strength score per team (mean points, with GD/GF as tiny tiebreakers)
+    team_strength: dict[str, float] = {
+        t: points_sum[t] / points_n[t] for t in points_sum if points_n[t] > 0
+    }
+
+    # Derive a complete, conflict-free slot assignment from the modal standings.
+    # _derive_slot_team selects the best-8 thirds by strength and assigns them to the
+    # 8 Best 3rd slots via a complete bipartite matching, so every slot is filled with
+    # a valid eligible 3rd-placer and no team is double-booked.
+    modal_slot_team = _derive_slot_team(modal_group_standings, team_strength, knockout_slots)
+
     return {
         "pair_counts": dict(pair_counts),
         "home_wins": dict(home_wins),
         "drew_90": dict(drew_90),
         "final_winners": final_winners,
         "n_sims": n_sims,
+        "modal_group_standings": modal_group_standings,
+        "modal_slot_team": modal_slot_team,
     }
 
 

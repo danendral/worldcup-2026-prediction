@@ -23,13 +23,59 @@ export function Bracket({
   const [pathTeam, setPathTeam] = useState<string | null>(null);
 
   const byRound = useMemo(() => {
-    const map: Record<string, KnockoutMatch[]> = {};
-    for (const r of ROUNDS) {
-      map[r.key] = matches
-        .filter((m) => m.round === r.key)
-        .sort((a, b) => a.id - b.id);
+    const byId: Record<number, KnockoutMatch> = {};
+    for (const m of matches) byId[m.id] = m;
+
+    // Parse a "Winner Match N" / "Loser Match N" slot into the referenced id.
+    const feederId = (slot: string): number | null => {
+      const mt = /Match (\d+)$/.exec(slot);
+      return mt ? Number(mt[1]) : null;
+    };
+
+    // Visual top-to-bottom order is the BRACKET-TREE order, not match_id order:
+    // each parent match's two feeders must sit adjacent in the round below it, so
+    // a winner lines up with the tie it advances to. We derive it from the feeder
+    // graph (slot_home/slot_away → "Winner Match N"), so it stays correct for any
+    // wiring. Build the deepest round's order first, then carry it upward: a round
+    // is ordered by visiting the next round's matches in their established order
+    // and emitting each one's two feeders.
+    const rounds = ROUNDS.map((r) => r.key);
+    const order: Record<string, KnockoutMatch[]> = {};
+
+    // Final: just its single match.
+    const finalRound = rounds[rounds.length - 1];
+    order[finalRound] = matches
+      .filter((m) => m.round === finalRound)
+      .sort((a, b) => a.id - b.id);
+
+    // Walk from Final down to R32, ordering each round by its parents' feeders.
+    for (let i = rounds.length - 2; i >= 0; i--) {
+      const round = rounds[i];
+      const parentOrder = order[rounds[i + 1]];
+      const seen = new Set<number>();
+      const ordered: KnockoutMatch[] = [];
+      for (const parent of parentOrder) {
+        for (const slot of [parent.homeSlot, parent.awaySlot]) {
+          const fid = feederId(slot);
+          if (fid != null && byId[fid] && !seen.has(fid)) {
+            seen.add(fid);
+            ordered.push(byId[fid]);
+          }
+        }
+      }
+      // Fallback: append any matches of this round the graph didn't reach
+      // (keeps the column complete even if a slot can't be parsed).
+      for (const m of matches
+        .filter((m) => m.round === round)
+        .sort((a, b) => a.id - b.id)) {
+        if (!seen.has(m.id)) {
+          seen.add(m.id);
+          ordered.push(m);
+        }
+      }
+      order[round] = ordered;
     }
-    return map;
+    return order;
   }, [matches]);
 
   const finalMatch = byRound["Final"]?.[0];

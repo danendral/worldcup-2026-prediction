@@ -26,10 +26,19 @@ export function Hero({ data }: { data: Predictions }) {
             {meta.nSims.toLocaleString()} Monte Carlo tournaments
           </span>
         </div>
-        <Countdown kickoff={meta.kickoff} />
+        <div className="flex items-center gap-3">
+          <Countdown kickoff={meta.kickoff} />
+          <a
+            href="#disclaimer"
+            className="flex items-center gap-1 rounded-full border border-[rgba(236,230,216,0.1)] px-2.5 py-1 font-mono text-[9px] uppercase tracking-[0.16em] text-mute/60 transition-colors hover:border-[rgba(232,181,66,0.3)] hover:text-signal"
+          >
+            ⓘ not betting advice
+          </a>
+        </div>
       </div>
 
-      <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+
+<div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         {/* LEFT — headline */}
         <div>
           <div
